@@ -139,7 +139,7 @@ rais = (
     .write.mode('overwrite')
     .partitionBy('ano', 'uf')
     .format('parquet')
-    .save("s3://datalake-alexandre-tf-desafio-1-edc/tf-staging/rais")
+    .save("s3://datalake-alexandre-tf-desafio-1-edc/tf-staging/")
 )
 
 job.commit()
