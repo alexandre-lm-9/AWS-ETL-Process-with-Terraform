@@ -1,6 +1,6 @@
 resource "aws_s3_bucket_object" "raw-data-code" {
   bucket = aws_s3_bucket.datalake_tf.id
-  key    = "tf-codes/python/s3_upload.py" 
+  key    = "tf-codes/python/s3_upload_raw-data.py" 
   acl    = "private"                   
   source = "../codes/s3_upload_raw-data.py"           
   etag   = md5("../codes/s3_upload_raw-data.py") 
