@@ -17,11 +17,11 @@ Practical Challenge: Module 1 - Fundamentals in Data Architecture and Cloud Solu
 
 1- Ingest the 2020 RAIS Public Affiliations data into AWS S3
 
-2- Data available at: RAIS and CAGED Microdata.Clean the 2020 RAIS dataset: 
+2- Data available at: http://pdet.mte.gov.br/microdados-rais-e-caged.
 
 - Modify column names, replacing spaces with "_". 
 - Remove accents from columns and lowercase all letters. 
-- Create a "uf" column from the "municipio" column and Adjust data types for remuneration columns
+- Create a "uf" column from the "municipio" column and Adjust data types of the remuneration columns
 
 3- Transform the data into parquet format and write to the staging or silver zone of your Data Lake.
 
