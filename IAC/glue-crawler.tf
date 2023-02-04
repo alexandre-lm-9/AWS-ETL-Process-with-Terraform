@@ -8,6 +8,6 @@ resource "aws_glue_crawler" "glue-crawler" {
   role          = aws_iam_role.glue-crawler-role.arn
 
   s3_target {
-    path = "s3://${aws_s3_bucket.datalake_tf.id}/${aws_s3_bucket_object.tf-staging.id}/"
+    path = "s3://${aws_s3_bucket.datalake_tf.id}/${aws_s3_bucket_object.tf-staging.id}"
   }
 }

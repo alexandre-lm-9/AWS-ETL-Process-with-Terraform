@@ -1,12 +1,3 @@
-# from pyspark.sql import functions as f
-# from pyspark.sql import SparkSession
-#
-# # Creating Spark Session
-#
-# sc = SparkContext.getOrCreate()
-#
-# spark = SparkSession.builder.appName('PySpark ETL Job').getOrCreate()
-
 import sys
 from awsglue.transforms import *
 from awsglue.utils import getResolvedOptions
