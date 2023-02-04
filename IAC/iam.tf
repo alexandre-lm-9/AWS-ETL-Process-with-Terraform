@@ -59,8 +59,3 @@ resource "aws_iam_role_policy" "glue-crawler_role_policy" {
     ]
   })
 }
-
-//resource "aws_iam_role_policy_attachment" "glue-iam-role-glue-policy-attach" {
-//  role       = aws_iam_role.glue-crawler-role.name
-//  policy_arn = aws_iam_policy.glue-crawler_role_policy.arn
-//}

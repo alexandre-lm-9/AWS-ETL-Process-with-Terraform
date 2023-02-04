@@ -1,5 +1,5 @@
 resource "aws_glue_catalog_database" "aws_glue_catalog_database" {
-  name = "glue-crawler-database-desafio-tf"
+  name = "glue-crawler-database-challenge-tf"
 }
 
 resource "aws_glue_crawler" "glue-crawler" {
