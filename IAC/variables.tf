@@ -3,7 +3,7 @@ variable "base_bucket_name_tf" {
 }
 
 variable "exercise" {
-  default = "challenge-1-edc"
+  default = "desafio-1-edc"
 }
 
 variable "aws_region" {
