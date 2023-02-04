@@ -2,7 +2,7 @@ resource "aws_s3_bucket_object" "raw-data-code" {
   bucket = aws_s3_bucket.datalake_tf.id
   key    = "tf-codes/python/s3_upload.py" #onde vai salvar o arquivo
   acl    = "private"                   # Acesso a lista
-  source = "../codes/s3_upload.py"           #path do arquivo a ser subido
+  source = "../codes/s3_upload_raw-data.py"           #path do arquivo a ser subido
   etag   = md5("../codes/s3_upload_raw-data.py")  # se não houver mudanca, nao sobe o dado novamente
 }
 
