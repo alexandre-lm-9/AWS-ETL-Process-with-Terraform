@@ -24,6 +24,6 @@ resource "aws_s3_bucket_object" "raw-data" {
 //
 resource "aws_s3_bucket_object" "tf-staging" {
   bucket = aws_s3_bucket.datalake_tf.id
-  key    = "dado-rais-2020-tf" #onde vai salvar o arquivo
+  key    = "tf-staging" #onde vai salvar o arquivo
   acl    = "private"                   # Acesso a lista
 }
