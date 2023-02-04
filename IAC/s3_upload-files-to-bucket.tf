@@ -10,7 +10,7 @@ resource "aws_s3_bucket_object" "pyspark-code" {
   bucket = aws_s3_bucket.datalake_tf.id
   key = "tf-codes/pyspark/pyspark_job.py" #onde vai salvar o arquivo
   acl = "private" # Acesso a lista
-  source = "/codes/pyspark_job.py" #path do arquivo a ser subido
+  source = "../codes/pyspark_job.py" #path do arquivo a ser subido
   etag = md5("../codes/pyspark_job.py") # se não houver mudanca, nao sobe o dado novamente
 }
 
